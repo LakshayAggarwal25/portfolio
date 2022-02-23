@@ -1,0 +1,33 @@
+.skills{
+    height: 100% !important;
+    margin: 5% auto;
+}
+.skills-title{
+    font-size: 44px;
+    color: #062c64 !important;
+    text-decoration: underline;
+}
+
+.skills-container{
+    margin-top: 5%;
+    gap: 50px;
+
+}
+.skill-item{
+    width: 20%;
+}
+
+.skill-item img{
+    height: 100px;
+    transition: all 200ms ease-in-out;
+}
+
+.skill-item img:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 786px) {
+    
+    .skill-item img{
+        height: 60px !important;
+    }
+}

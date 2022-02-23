@@ -1,0 +1,31 @@
+.navbar a {
+  margin: 0 5px;
+}
+.navbar {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+}
+.navbar-nav .nav-link {
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.navbar-nav .active {
+  color: var(--bs-primary) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.nav-item :hover{
+  color: var(--bs-primary) !important;
+}
+
+.navbar-nav .active-dark {
+  color: lightcoral !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.nav-item-dark :hover{
+  color: lightcoral !important;
+}
+
+.navbar-brand{
+  cursor: pointer;
+}

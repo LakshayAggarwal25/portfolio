@@ -1,0 +1,42 @@
+.hero {
+    height: 95vh !important;
+    font-size: 40px;
+}
+.hero-content {
+    height: 100%;
+}
+
+.hero-item {
+    width: 50%;
+}
+
+.hero-item img {
+    width: 130%;
+    height: 100%;
+}
+
+.name {
+    font-size: 44px;
+    display: inline;
+    color: var(--bs-primary) !important;
+}
+@media screen and (max-width: 786px) {
+    .hero {
+        font-size: 26px !important;
+        margin-top: -30% !important;
+    }
+
+    .name {
+        font-size: 30px !important;
+    }
+    .hero-content {
+        flex-direction: column !important;  
+        justify-content: center !important;
+        align-items: center !important;
+        height: 120% !important;
+        gap: 10% !important;
+    }
+    .hero-item img {
+        width: 130% !important;
+    }
+}
