@@ -28,6 +28,10 @@
 }
 @media screen and (max-width: 786px) {
     .projects-title{
-        margin: 2% 0 !important;
+        padding-top:10% !important;
+        margin-bottom: -5%;
+    }
+    .project-card{
+        height: max-content !important;
     }
 }

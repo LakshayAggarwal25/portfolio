@@ -26,7 +26,7 @@ function Project({ projectName, projectDesc, projectLink }) {
 
     return (
         <>
-            <div className="container project-box" style={{ maxWidth: '80%' }} data-aos="zoom-in-right" data-aos-duration="2300">
+            <div className="container project-box" style={{ maxWidth: '80%' }} data-aos="zoom-in-right" data-aos-duration="1000">
                 <div className="d-flex flex-column justify-content-between align-items-center">
                     <div className="align-middle project-item project-img">
                         <img src={projectImg} className="img-fluid rounded-start" alt="..." />

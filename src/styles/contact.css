@@ -16,14 +16,27 @@
 
 @media screen and (max-width: 786px) {
     .contact{
+        height: max-content !important;
+    }
+    .contact-title{
+        margin-top: -25% !important;
+    }
+    .contact-items {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contact{
         height: 50vh !important;
-        margin: 0 !important;
+        margin-top: 18% !important;
         margin-bottom: 10% !important;
     }
     .contact-items {
         flex-direction: column !important;
         justify-content: flex-start !important;
         align-items: center !important;
-        margin-bottom: 10% !important;
     }
 }

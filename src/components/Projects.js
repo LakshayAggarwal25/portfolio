@@ -51,7 +51,7 @@ function Projects() {
     return (
         <>
             <div className='container projects'>
-                <div className='projects-title text-center fw-bold' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">Projects</div>
+                <div className='projects-title text-center fw-bold' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">Projects</div>
                 <div className='project-card d-flex justify-content-between align-items-center'>
                 <button className='arrow-btn' onClick={previous}><i className="bi bi-caret-left"></i></button>
 

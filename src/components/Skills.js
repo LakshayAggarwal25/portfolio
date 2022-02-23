@@ -24,42 +24,42 @@ function Skills() {
     return (
         <>
         <div className='container skills'>
-            <div className='skills-title text-center fw-bold' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">Skills</div>
+            <div className='skills-title text-center fw-bold' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">Skills</div>
             <div className='skills-container d-flex justify-content-center align-items-center flex-wrap'>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={HTMLLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={CSSLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={JSLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={ReactLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={NodeLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={MongoLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={FBLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={CppLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={JavaLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={TWLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={BSLogo} alt="..."/>
                 </div>
-                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600">
+                <div className='skill-item text-center ' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700">
                     <img src={GithubLogo} alt="..."/>
                 </div>
             </div>
