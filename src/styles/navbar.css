@@ -1,31 +1,31 @@
+
+
 .navbar a {
   margin: 0 5px;
+  box-sizing: border-box !important;
 }
 .navbar {
+  box-sizing: border-box !important;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
+  margin:auto;
 }
 .navbar-nav .nav-link {
+  box-sizing: border-box !important;
   letter-spacing: 1px;
   cursor: pointer;
 }
 .navbar-nav .active {
+  box-sizing: border-box !important;
   color: var(--bs-primary) !important;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .nav-item :hover{
+  box-sizing: border-box !important;
   color: var(--bs-primary) !important;
 }
 
-.navbar-nav .active-dark {
-  color: lightcoral !important;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.nav-item-dark :hover{
-  color: lightcoral !important;
-}
-
 .navbar-brand{
+  box-sizing: border-box !important;
   cursor: pointer;
 }
