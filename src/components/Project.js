@@ -39,12 +39,12 @@ function Project({ projectName, projectDescLess, projectDescComplete, projectLin
 
     return (
         <>
-            <div className="w-9/12 lg:w-5/6 m-auto" data-aos="zoom-in" data-aos-duration="500">
+            <div className="w-9/12 lg:w-5/6 m-auto mb-8" data-aos="zoom-in" data-aos-duration="500">
                 <img src={projectImg} className="md:w-5/6 m-auto md:border-4 md:border-black md:p-2 md:rounded-2xl hover:cursor-grab " alt="Project" />
                 <div className="mt-2 md:mt-6">
                     <h5 className="text-blue-600 text-xl md:text-2xl md:font-bold">{projectName}</h5>
                     <p className=" md:mt-2 text-sm md:text-lg">{desc}<button className='text-blue-900 hover:cursor-pointer' onClick={changeReadSize} >{read}</button></p>
-                    <a className="md:text-lg hover:cursor-pointer underline text-blue-900" href={projectLink} target="_blank" rel="noreferrer"> Live Demo</a>
+                    <a className="md:text-lg hover:cursor-pointer underline text-blue-900" href={projectLink} target="_blank" rel="noreferrer">Live Demo<i class="bi bi-box-arrow-up-right ml-2"></i></a>
                 </div>
             </div>
         </>
