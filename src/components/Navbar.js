@@ -35,19 +35,19 @@ function Navbar() {
                 </button>
                 <nav>
                     <ul id='primary-navigation' isopen={navType} className='flex gap-4 items-center text-xl justify-end list-none m-0 p-0 mr-2'>
-                        <li onClick={setActive}>
+                        <li onClick={(e)=>{setActive(e);toggleNav();}}>
                             <a className='cursor-pointer nav-item text-blue-600' href='/'>Home</a>
                         </li>
-                        <li onClick={setActive}>
+                        <li onClick={(e)=>{setActive(e);toggleNav();}}>
                             <Link className='cursor-pointer nav-item' to='/about'>About</Link>
                         </li>
-                        <li onClick={setActive}>
+                        <li onClick={(e)=>{setActive(e);toggleNav();}}>
                             <Link className='cursor-pointer nav-item' to='/skills'>Skills</Link>
                         </li>
-                        <li onClick={setActive}>
+                        <li onClick={(e)=>{setActive(e);toggleNav();}}>
                             <Link className='cursor-pointer nav-item' to='/projects'>Project</Link>
                         </li>
-                        <li onClick={setActive}>
+                        <li onClick={(e)=>{setActive(e);toggleNav();}}>
                             <Link className='cursor-pointer nav-item' to='/contact'>Contact Me</Link>
                         </li>
                         <li >

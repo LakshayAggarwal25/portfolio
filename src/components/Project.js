@@ -44,7 +44,7 @@ function Project({ projectName, projectDescLess, projectDescComplete, projectLin
                 <div className="mt-2 md:mt-6">
                     <h5 className="text-blue-600 text-xl md:text-2xl md:font-bold">{projectName}</h5>
                     <p className=" md:mt-2 text-sm md:text-lg">{desc}<button className='text-blue-900 hover:cursor-pointer' onClick={changeReadSize} >{read}</button></p>
-                    <a className="md:text-lg hover:cursor-pointer underline text-blue-900" href={projectLink} target="_blank" rel="noreferrer">Live Demo<i class="bi bi-box-arrow-up-right ml-2"></i></a>
+                    <a className="md:text-lg hover:cursor-pointer underline text-blue-900" href={projectLink} target="_blank" rel="noreferrer">Live Demo<i className="bi bi-box-arrow-up-right ml-2"></i></a>
                 </div>
             </div>
         </>

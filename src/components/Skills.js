@@ -34,7 +34,7 @@ function Skills() {
                         <img src={CSSLogo} alt="css" className={imgStyle} />
                     </div>
                     <div className={imgContainerStyle} data-aos="zoom-in" data-aos-duration="500">
-                        <a href='https://github.com/LakshayAggarwal25/JavaScript' target="_blank">
+                        <a href='https://github.com/LakshayAggarwal25/JavaScript' target="_blank" rel="noreferrer">
                             <img src={JSLogo} alt="js" className={imgStyle} />
                         </a>
                     </div>
