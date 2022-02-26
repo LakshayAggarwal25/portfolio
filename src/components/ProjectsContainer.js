@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect,useContext } from 'react'
+
 import Project from './Project';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { ThemeContext } from '../App';
+
 
 function ProjectsContainer() {
     const pagination = {
@@ -14,8 +15,27 @@ function ProjectsContainer() {
     };
 
     useEffect(() => {
-        AOS.init();
+        const bullets = document.querySelectorAll(".swiper-pagination-bullet")
+        for (let i = 0; i < bullets.length; i++) {
+            bullets[i].style.backgroundColor = "white"
+        }
     }, [])
+    
+
+    const {theme} = useContext(ThemeContext);
+
+    if(theme==="black"){
+        const bullets = document.querySelectorAll(".swiper-pagination-bullet")
+        for (let i = 0; i < bullets.length; i++) {
+            bullets[i].style.backgroundColor = "white"
+        }
+    }
+    if(theme==="white"){
+        const bullets = document.querySelectorAll(".swiper-pagination-bullet")
+        for (let i = 0; i < bullets.length; i++) {
+            bullets[i].style.backgroundColor = "black"
+        }
+    }
 
     const projectsList = [
         {
@@ -43,8 +63,8 @@ function ProjectsContainer() {
 
     return (
         <>
-            <div className='container mx-auto mt-8 lg:mt-20 p-0'>
-                <div className='text-center text-blue-700 text-3xl lg:text-6xl mb-6 md:mb-12' data-aos="fade-up" data-aos-duration="400">Projects</div>
+            <section id='projects' className='container mx-auto mt-8 lg:mt-20 p-0'>
+                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-500"} text-3xl lg:text-6xl mb-6 md:mb-12`}>Projects</div>
                 <Swiper
                     pagination={pagination}
                     modules={[Pagination]}
@@ -54,7 +74,7 @@ function ProjectsContainer() {
                     <SwiperSlide ><Project projectName={projectsList[1].projectName} projectDescLess={projectsList[1].projectDescLess} projectDescComplete = {projectsList[1].projectDescComplete} projectLink={projectsList[1].projectLink} /></SwiperSlide>
                     <SwiperSlide ><Project projectName={projectsList[2].projectName} projectDescLess={projectsList[2].projectDescLess} projectDescComplete = {projectsList[2].projectDescComplete} projectLink={projectsList[2].projectLink} /></SwiperSlide>
                 </Swiper>
-            </div>
+            </section>
         </>
     )
 }

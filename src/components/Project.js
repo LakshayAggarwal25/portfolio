@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState, useContext } from 'react'
+
 import FileImg from '../assets/filemanagement.png'
 import MovieImg from '../assets/movie.png'
 import CodeImg from '../assets/codebook.png'
+import { ThemeContext } from '../App';
+
 
 function Project({ projectName, projectDescLess, projectDescComplete, projectLink }) {
 
     const [desc, setDesc] = useState(projectDescLess)
     const [read, setRead] = useState("Read More")
+    const {theme} = useContext(ThemeContext);
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
 
     let projectImg;
 
@@ -39,12 +38,13 @@ function Project({ projectName, projectDescLess, projectDescComplete, projectLin
 
     return (
         <>
-            <div className="w-9/12 lg:w-5/6 m-auto mb-8" data-aos="zoom-in" data-aos-duration="500">
-                <img src={projectImg} className="md:w-5/6 m-auto md:border-4 md:border-black md:p-2 md:rounded-2xl hover:cursor-grab " alt="Project" />
+            <div className="w-9/12 lg:w-5/6 m-auto mb-8" >
+            
+                <img src={projectImg} className={`md:w-5/6 m-auto md:border-4 md:border-${(theme === "white") ? "black" : "white"} md:p-2 md:rounded-2xl hover:cursor-grab `} alt="Project" />
                 <div className="mt-2 md:mt-6">
-                    <h5 className="text-blue-600 text-xl md:text-2xl md:font-bold">{projectName}</h5>
-                    <p className=" md:mt-2 text-sm md:text-lg">{desc}<button className='text-blue-900 hover:cursor-pointer' onClick={changeReadSize} >{read}</button></p>
-                    <a className="md:text-lg hover:cursor-pointer underline text-blue-900" href={projectLink} target="_blank" rel="noreferrer">Live Demo<i className="bi bi-box-arrow-up-right ml-2"></i></a>
+                    <h5 className={`text-${(theme === "white") ? "blue-600" : "red-700"} text-xl md:text-2xl md:font-bold`}>{projectName}</h5>
+                    <p className={`text-${(theme === "white") ? "black" : "white"} md:mt-2 text-sm md:text-lg`}>{desc}<button className='text-blue-900 hover:cursor-pointer' onClick={changeReadSize} >{read}</button></p>
+                    <a className={`md:text-lg hover:cursor-pointer underline text-${(theme === "white") ? "blue-900" : "cyan-400"}`} href={projectLink} target="_blank" rel="noreferrer">Live Demo<i className="bi bi-box-arrow-up-right ml-2"></i></a>
                 </div>
             </div>
         </>

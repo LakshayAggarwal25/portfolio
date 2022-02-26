@@ -1,23 +1,82 @@
-import React, { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import React, { useContext } from 'react'
+import { FaUserGraduate } from 'react-icons/fa'
+import { BsCodeSlash } from 'react-icons/bs'
+import { BsFolderFill } from 'react-icons/bs'
+import { FaTableTennis } from 'react-icons/fa'
+import { ThemeContext } from '../App';
 
 function About() {
-  
-    useEffect(() => {
-        AOS.init();
-    }, [])
 
+    const { theme } = useContext(ThemeContext);
+
+
+
+    const articleStyle = `h-28 w-full md:w-full md:h-48 text-center flex flex-col md:grid gap-0 md:grid-rows-2 md:grid-cols-1 bg-${(theme === "white") ? "sky-900" : "emerald-800"} hover:scale-105 duration-200 transition-ease-in-out rounded-b-xl md:rounded-b-3xl overflow-hidden shadow-md shadow-${(theme === "white") ? "black" : "white"}`
+
+    const iconNameBox = `flex  md:flex-col justify-center items-center bg-${(theme === "white") ? "cyan-400" : "green-500"} h-2/6 md:h-5/6 text-${theme} border-2 md:border-4 border-${(theme === "white") ? "black" : "white"} shadow-2xl rounded-b-xl md:rounded-b-3xl`
+    
+    const smallText = `text-sm text-white w-full text-center md:text-lg`;
+
+
+    const scrollProject = () =>{
+        document.getElementById('projects').scrollIntoView()
+    } 
+    const scrollSkills = () =>{
+        document.getElementById('skills').scrollIntoView()
+    }
 
     return (
         <>
-            <div className='container  mx-auto mt-20 p-0'>
-                <div className='text-center text-blue-700 text-3xl lg:text-6xl ' data-aos="fade-up" data-aos-duration="400">About Me</div>
-                <div className='w-5/6 lg:w-4/6 lg:text-center m-auto mt-4 md:text-xl lg:mt-8 lg:text-2xl'data-aos="zoom-in" data-aos-duration="500" >
-                    My name is Lakshay Aggarwal. I’m currently pursuing B.Tech in Computer Science and Engineering from Guru Tegh Bahadur Institute of Technology. I see myself as a relentless problem-solver, and I’m always looking for a new challenge. I’ve recently gotten interested in Web Development using MERN stack. I have a high motivational spirit in terms of learning, seeking experiences. I am able to work well, honestly and responsibly. Passionate about computer science and how it can bring about changes in the world.
+            <section id='about' className='container  mx-auto mt-24 lg:mt-32 p-0'>
+                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-500"} text-3xl lg:text-6xl`}>About Me</div>
+                <div className={`text-${(theme === "white") ? "black" : "white"} grid gap-4 md:gap-0 md:grid-cols-2 md:grid-rows-1 px-8 place-content-center place-items-center`}>
+                    <div className=' m-auto mt-4 md:text-xl  lg:mt-8 lg:text-2xl' >
+                        My name is Lakshay Aggarwal. I’m currently pursuing B.Tech in Computer Science and Engineering from Guru Tegh Bahadur Institute of Technology. I see myself as a relentless problem-solver, and I’m always looking for a new challenge. I’ve recently gotten interested in Web Development using MERN stack. I have a high motivational spirit in terms of learning, seeking experiences. I am able to work well, honestly and responsibly. Passionate about computer science and how it can bring about changes in the world.
+                    </div>
+                    <div className='text-center grid gap-2 md:gap-4 md:w-5/6 grid-cols-2 grid-rows-1 place-content-center place-items-center m-0 md:text-xl lg:mt-8 lg:text-2xl' >
+                        <article className={articleStyle}>
+                            <div className={iconNameBox}>
+                                <FaUserGraduate />
+                                <h3 className=''>Education </h3>
+                            </div>
+                            <div className='px-4'>
+                                <small className={smallText}>Computer Science Engineering - (8.1 CGPA)</small>
+                            </div>
+                        </article>
+
+                        <article className={articleStyle} onClick={scrollSkills}>
+                            <div className={iconNameBox}>
+                                <BsCodeSlash />
+                                <h3 className=''>Experience with</h3>
+                            </div>
+                            <div className='px-4'>
+                                <small className={smallText}>4 languages<br /> 5 frameworks/ libraries</small>
+                            </div>
+                        </article>
+
+                        <article className={articleStyle} onClick={scrollProject}>
+                            <div className={iconNameBox}>
+                                <BsFolderFill />
+                                <h3 className=''>Projects </h3>
+                            </div>
+                            <div className='px-4'>
+                                <small className={smallText}>5+ projects</small>
+                            </div>
+                        </article>
+                        
+                        
+                        <article className={articleStyle}>
+                            <div className={iconNameBox}>
+                                <FaTableTennis />
+                                <h3 className=''>Sports </h3>
+                            </div>
+                            <div className='px-4'>
+                                <small className={smallText}>Tennis <br />Table-Tennis</small>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
