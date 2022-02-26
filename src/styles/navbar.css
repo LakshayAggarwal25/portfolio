@@ -1,31 +1,39 @@
+@media screen and (max-width:768px){
+    #primary-navigation{
+        color: black;
+        margin: 0;
+        position: fixed;
+        inset: 0 0 0 60%;
+        flex-direction: column;
+        padding: min(30vh,10rem) 2em;   
+        justify-content: flex-start;
+        align-items: flex-end;
+        background-color: white;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: all 250ms ease-in-out;
+        overflow-y: hidden;
+    }
+    #primary-navigation[isopen="true"]{
+        transform: translateX(0%);
+        box-shadow: -5px 0 10px hsl(217, 91%, 60%, 0.500);
+
+    }
+
+    .nav-toggle{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right:2rem;
+        z-index: 9999;
+        font-size: 2rem;
+    }
 
 
-.navbar a {
-  margin: 0 5px;
-  box-sizing: border-box !important;
-}
-.navbar {
-  box-sizing: border-box !important;
-  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.15);
-  margin:auto;
-}
-.navbar-nav .nav-link {
-  box-sizing: border-box !important;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-.navbar-nav .active {
-  box-sizing: border-box !important;
-  color: var(--bs-primary) !important;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.nav-item :hover{
-  box-sizing: border-box !important;
-  color: var(--bs-primary) !important;
-}
-
-.navbar-brand{
-  box-sizing: border-box !important;
-  cursor: pointer;
+    .nav-btn[showopen="open"]{
+        display: inline;
+    }
+    .nav-btn[showclose="close"]{
+        display: inline;
+    }
 }
