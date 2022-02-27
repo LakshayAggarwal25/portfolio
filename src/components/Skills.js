@@ -24,7 +24,7 @@ function Skills() {
     return (
         <>
             <section id='skills' className='container mx-auto mt-8 lg:mt-20 p-0'>
-                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-500"}  text-3xl lg:text-6xl `} >Skills</div>
+                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-600/90"}  text-3xl lg:text-6xl `} >Skills</div>
                 <div className='grid gap-3 lg:gap-10 grid-cols-3 lg:grid-cols-4 place-content-center mt-8 lg:mt-16'>
                     <div className={imgContainerStyle} >
                         <img src={HTMLLogo} alt="html" className={imgStyle} />

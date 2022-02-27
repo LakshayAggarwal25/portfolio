@@ -17,7 +17,7 @@ function ProjectsContainer() {
     useEffect(() => {
         const bullets = document.querySelectorAll(".swiper-pagination-bullet")
         for (let i = 0; i < bullets.length; i++) {
-            bullets[i].style.backgroundColor = "white"
+            bullets[i].style.backgroundColor = "black"
         }
     }, [])
     
@@ -64,7 +64,7 @@ function ProjectsContainer() {
     return (
         <>
             <section id='projects' className='container mx-auto mt-8 lg:mt-20 p-0'>
-                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-500"} text-3xl lg:text-6xl mb-6 md:mb-12`}>Projects</div>
+                <div className={`text-center text-${(theme === "white") ? "blue-700" : "red-600/90"} text-3xl lg:text-6xl mb-6 md:mb-12`}>Projects</div>
                 <Swiper
                     pagination={pagination}
                     modules={[Pagination]}
