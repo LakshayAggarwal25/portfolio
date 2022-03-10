@@ -25,7 +25,7 @@ function Banner() {
         <div className='container mx-auto h-full mt-24 p-0'>
             <div className='flex flex-col gap-20 md:flex-row md:gap-0 items-center justify-center'>
                 <div className={`text-${(theme==="white")?"black":"white"} md:w-2/6 text-3xl lg:text-4xl ` } >
-                    <h1>Hi !</h1>I'm <span className={`text-${(theme==="white")?"blue-700":"red-600/90"} font-bold md:font-normal lg:text-5xl`}>Lakshay Aggarwal</span>,<br />a <span>{Thing}</span>
+                    <h1>Hi !</h1>I'm <span className={`text-${(theme==="white")?"blue-700":"amber-400"} font-bold md:font-normal lg:text-5xl`}>Lakshay Aggarwal</span>,<br />a <span>{Thing}</span>
                 </div>
                 <div className='w-96 lg:w-3/6'>
                     <img src={MainImg} alt="..."/>
