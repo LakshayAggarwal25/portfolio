@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 
-import FileImg from '../assets/filemanagement.png'
+import FileImg from '../assets/os.png'
 import MovieImg from '../assets/movie.png'
 import CodeImg from '../assets/codebook.png'
 import { ThemeContext } from '../App';
@@ -15,7 +15,7 @@ function Project({ projectName, projectDescLess, projectDescComplete, projectLin
 
     let projectImg;
 
-    if (projectName === "File Management System") {
+    if (projectName === "Operating System") {
         projectImg = FileImg;
     }
     else if (projectName === "Movies App") {

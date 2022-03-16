@@ -18,7 +18,7 @@ function Contact() {
                         <i className="bi bi-github"></i><a href='https://github.com/LakshayAggarwal25' target='_blank' rel="noreferrer" >Github</a>
                     </div>
                     <div className='contact-item'>
-                        <i className="bi bi-linkedin"></i><a href='https://www.linkedin.com/in/lakshayaggarwal25/' target='_blank' rel="noreferrer" >Linked In</a>
+                        <i className="bi bi-linkedin"></i><a href='https://www.linkedin.com/in/lakshayaggarwal25/' target='_blank' rel="noreferrer" >LinkedIn</a>
                     </div>
                 </div>
             </section>

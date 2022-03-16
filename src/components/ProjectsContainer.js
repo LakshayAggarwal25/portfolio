@@ -39,9 +39,9 @@ function ProjectsContainer() {
 
     const projectsList = [
         {
-            projectName: "File Management System",
-            projectDescLess: "As the name suggests this is a file management system, in which a user can create a nested folder structure, currently a user can also create, manage and update text files and albums.  ",
-            projectDescComplete:"As the name suggests this is a file management system, in which a user can create a nested folder structure, currently a user can also create, manage and update text files and albums. Tech Used - HTML, CSS and JavaScript. Currently this project uses Local Storage to store user data. Working on this project improved my understanding of vanilla JavaScript, and how to create a boilerplate html so that can be used again.  ",
+            projectName: "Operating System",
+            projectDescLess: "As the name suggests this is a operating system, in which a user can create a nested folder structure, currently a user can also create, manage and update text files and albums.  ",
+            projectDescComplete:"As the name suggests this is a operating system, in which a user can create a nested folder structure, currently a user can also create, manage and update text files and albums. Tech Used - HTML, CSS and JavaScript. Currently this project uses Local Storage to store user data. Working on this project improved my understanding of vanilla JavaScript, and how to create a boilerplate html so that can be used again.  ",
             projectLink: "https://file-management-system.netlify.app/",
 
         },
